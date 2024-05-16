@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --background-color: #12053A;
+    --header-font: 'Crimson Pro', serif;
+    --paragraph-font: 'Courier Prime', monospace;
+    --header-font-size: 2rem;
+    --text-color: white;
+
+
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--paragraph-font);
+    padding-left: 5%;
+    padding-right: 5%;
+}
