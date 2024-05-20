@@ -1,0 +1,103 @@
+
+.hero {
+    display: flex;
+    margin-top: 50px;
+}
+
+.img {
+    flex: 1;
+    /* border-width: 3px;
+    border-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.img .hex {
+    -webkit-mask-image: url(../assets/hexagon.svg);
+    mask-image: url(../assets/hexagon.svg);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 90%;
+    mask-size: 90%; 
+    mask-repeat: no-repeat;
+}
+
+.text {
+    flex: 1;
+    /* border-width: 3px;
+    border-color: red; */
+    padding: 2vw;
+    
+}
+
+.text h1 {
+    margin-bottom: 2vw;
+  }
+  
+.text p {
+    margin-bottom: 2vw;
+}
+
+.links {
+    display: flex;
+    
+}
+
+
+.links a {
+    transition: transform 0.3s ease;
+    margin-right: 2vw;
+}
+
+.links a img {
+    width: 3vw;
+    height: auto;
+}
+
+.links a:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.logocarousel {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    background-color: #241650;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logocarousel img {
+    width: 5vw;
+    transition: transform 0.3s ease;
+}
+
+.logocarousel img:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes App-logo-spin {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+.logocarousel img.reactspin:hover {
+    animation: App-logo-spin infinite 4s ease;
+}

@@ -8,7 +8,8 @@
     --background-color: #12053A;
     --header-font: 'Crimson Pro', serif;
     --paragraph-font: 'Courier Prime', monospace;
-    --header-font-size: 2rem;
+    --header-font-size: 5vw;
+    --paragraph-font-size: 2vw;
     --text-color: white;
 
 
@@ -17,10 +18,14 @@
 h1 {
     font-family: var(--header-font);
     font-size: var(--header-font-size);
+    font-weight: 900;
+
+
 }
 
 p {
     font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
 }
 
 body {

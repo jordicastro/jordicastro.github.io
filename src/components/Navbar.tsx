@@ -1,17 +1,21 @@
 import styles from './navbar.module.css'
 import { Link } from 'react-router-dom'
-import reactLogo from '../assets/react.svg'
+import logo from '../assets/logo.svg'
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
 
       <div className={styles.logo}>
         <ul>
-          <li>
-            <img src={reactLogo} alt="Logo" />
+          <li className={styles.image}>
+            <Link to='/'>
+            <img src={logo} alt="Logo" />
+            </Link>
           </li>
           <li>
+            <Link to='/'>
             <p>jordi.dev</p>
+            </Link>
           </li>
         </ul>
       </div>
@@ -19,13 +23,13 @@ const Navbar = () => {
       <div>
         <ul>
           <li className={styles.button}>
-            <Link to='/'>Home</Link>
+            <Link to='/'>home</Link>
           </li>
           <li className={styles.button}>
-            <Link to='/projects'>Projects</Link>
+            <Link to='/projects'>projects</Link>
           </li>
           <li className={styles.button}>
-            <Link to='/about'>About</Link>
+            <Link to='/about'>about</Link>
           </li>
         </ul>
       </div>
