@@ -6,7 +6,12 @@ import notion from '../assets/notion.svg'
 import spotify from '../assets/spotify.svg'
 import football from '../assets/football.svg'
 
-const Cards = () => {
+interface CardsProps {
+    isHome: boolean;
+}
+
+
+const Cards: React.FC<CardsProps> = ({isHome}) => {
 
     const cardData = [
         {
@@ -39,7 +44,7 @@ const Cards = () => {
                 <Card title={card.title} logo={card.logo} desc={card.desc}/>
             ))}
         </div>
-        <button className={styles.button}>VIEW ALL PROJECTS</button>
+        { isHome ? (<button className={styles.button}>VIEW ALL PROJECTS</button>) : null}
     </div>
   )
 }

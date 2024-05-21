@@ -1,7 +1,10 @@
+import Cards from '../components/Cards'
 
 const ProjectsPage = () => {
   return (
-    <div>ProjectsPage</div>
+    <div>
+      <Cards isHome={false}/>
+    </div>
   )
 }
 

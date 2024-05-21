@@ -5,8 +5,7 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <Cards />
-      <p>HomePage</p>
+      <Cards isHome={true}/>
     </>
   )
 }
