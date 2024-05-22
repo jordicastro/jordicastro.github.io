@@ -6,9 +6,10 @@ interface CardProps {
     title: string;
     logo: string;
     desc: string;
+    link: string;
 }
 
-const Card: React.FC<CardProps> = ({title, logo, desc }) => {
+const Card: React.FC<CardProps> = ({title, logo, desc, link }) => {
 
     const [fullDescription, setFullDescription] = useState(false);
 
@@ -35,7 +36,7 @@ const Card: React.FC<CardProps> = ({title, logo, desc }) => {
             </button>
         </div> 
 
-        <Button text="VIEW MORE" />
+        <Button text="VIEW MORE"  link={link}/>
     </div>
     )
 }

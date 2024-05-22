@@ -1,0 +1,54 @@
+
+.notfoundcard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 8vw;
+    padding: 2.5vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 10vw;
+
+    border-radius: 15px;
+
+
+    min-width: 20vw;
+    min-height: 20vw;
+
+    background-color: #241650;
+
+    gap: 2vw;
+}
+
+.notfoundcard img {
+    width: 8vw;
+    height: auto;
+}
+
+.notfoundcard h1 {
+    font-size: 2vw;
+    color: white;
+}
+
+.notfoundcard p {
+    font-size: 1.5vw;
+    color: white;
+}
+
+.button {
+    background-color: #8F8FDB;
+    min-width: 13vw;
+    min-height: 3vw;
+    padding: 0.5vw;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.button:hover {
+    background-color: #241650;
+    border-color: #8F8FDB;
+}
+
