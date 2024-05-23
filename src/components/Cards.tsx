@@ -41,19 +41,21 @@ const Cards: React.FC<CardsProps> = ({isHome}) => {
         }
     ]
 
+    const cardDataHome = cardData.slice(0, 4);
+
   return (
     <div className={styles.cardSection}>
         <h1>Projects</h1>
         <div className={styles.cards}>  
              
-            {cardData.map((card) => (
+            {cardDataHome.map((card) => (
                 <Card title={card.title} logo={card.logo} desc={card.desc} link={`/projects/${card.id}`}/>
             ))}
         </div>
         { isHome ? 
             (
-            <Link to='/projects'>
-                <button className={styles.button}>VIEW ALL PROJECTS</button>
+            <Link className={styles.button} to='/projects'>
+                <button className={styles.center}>VIEW ALL PROJECTS</button>
             </Link>
             ) : 
             null}

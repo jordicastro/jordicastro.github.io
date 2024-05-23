@@ -11,8 +11,8 @@ const Button: React.FC<ButtonProps> = ({text, link}) => {
 
 
   return (
-    <Link to={link}>
-    <button className={styles.button}><p>{text}</p></button>
+    <Link className={styles.button} to={link}>
+    <button className={styles.center} ><p>{text}</p></button>
     </Link>
   )
 }

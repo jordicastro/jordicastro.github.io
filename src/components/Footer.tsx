@@ -26,7 +26,7 @@ const Footer = () => {
             <a href="https://www.github.com/jordicastro">
                 <img src={github_w} alt="GitHub" />
             </a>
-            <a href="https://open.spotify.com/track/18HOjcvTVV7W8YzBuOsAPS">
+            <a href="https://open.spotify.com/album/3RQQmkQEvNCY4prGKE6oc5">
                 <img src={spotify_w} alt="Spotify" />
             </a>
         </div>
