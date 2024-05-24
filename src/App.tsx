@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import ProjectsPage from './pages/ProjectsPage'
 import AboutPage from './pages/AboutPage'
 import NotFoundPage from './pages/NotFoundPage'
+import ProjectPage from './pages/ProjectPage'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='projects' element={<ProjectsPage/>}/>
         <Route path='about' element={<AboutPage/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
+        <Route path='projects/:id' element={<ProjectPage/>}/>
       </Route>
     )
   );

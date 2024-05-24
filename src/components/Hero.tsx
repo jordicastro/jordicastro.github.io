@@ -20,7 +20,7 @@ const Hero = () => {
             </div >
             <div className={styles.text} >
                 <h1>Hi, I'm Jordi 👋</h1>
-                <p>I’m a passionate full stack React + Next.js developer based in Fayetteville, Arkansas.📍</p>
+                <p>I’m a passionate full stack React developer based in Fayetteville, Arkansas.📍</p>
                 <div className={styles.links} >
                     <a href="https://www.linkedin.com/in/jordicastr0/" >
                         <img src={linkedin} alt="LinkedIn" />

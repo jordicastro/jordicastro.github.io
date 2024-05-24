@@ -4,6 +4,7 @@ import imgPCQ from '../assets/about/PCQ.svg'
 import imgHogHacks from '../assets/about/hoghacks.png'
 import imgMountainBiking from '../assets/about/mountainbiking.png'
 import imgMusic from '../assets/about/music.jpeg'
+import data from '../data.json'
 
 
 export interface Card {
@@ -30,14 +31,16 @@ const AboutCards = () => {
         {
             title: "PCQ Undergrad Research",
             date: "AUG 2021 => MAY 2022, JUNE 2024 => PRESENT",
-            desc: "As a part of my undergraduate honors research, I worked under Dr. Nelson of the University of Arkansas to conduct side channel attacks on post-quantum crypto-graphic algorithms. Utilizing a ChipWhisperer and UFO board, I was able to test the safety of two encryption algorithms using Test Vector Leakage Assessment (TVLA) and present my findings at the University of Arkansas Honors Symposium.",
+            desc: "As a part of my undergraduate honors research, I worked under Dr. Nelson of the University of Arkansas to conduct side channel attacks on post-quantum crypto-graphic algorithms. Utilizing a ChipWhisperer and UFO board, I was able to test the safety of two encryption algorithms using Test Vector Leakage Assessment (TVLA) and present my findings at the University of Arkansas Honors Symposium. Currently, I am creating a full-stack SCA web-app that will enable researchers from across the globe to use the UofA’s PCQ equipment for leakage testing.",
             image: imgPCQ,
+            link: "https://github.com/SCA-Capstone/sca-app",
             id: 2,
         },
         {
             title: "Mountain Biking",
             date: "JUNE 2020 => PRESENT",
             desc: "I enjoy riding on the trails of the Greenway, which extends four cities in Northwest Arkansas: from Bentonville, to Rogers and Springdale, ending in Fayetteville. I usually go 20-30 miles and savor the scenic routes. Recently, I took a mountain biking course, which has inspired me to continue riding dirt. Given that Bentonville is the mountain biking capital of the United States, I’m ecstatic to continue learning and going on adventurous bike rides. ",
+            link: "https://www.strava.com/athletes/108776798",
             image: imgMountainBiking,
             id: 3,
         },
@@ -50,11 +53,13 @@ const AboutCards = () => {
         }
     ]
 
+    const aboutCards = data.about;
+
   return (
     <div className={styles.aboutCardsSection}>
         <h1>About Me</h1>
         <div className={styles.cards}>
-            {cardData.map((card: Card) => (
+            {aboutCards.map((card: Card) => (
                 <AboutCard card={card} />
             ))}
         </div>

@@ -1,29 +1,28 @@
 import styles from './card.module.css'
 import Button from './Button'
 import { useState } from 'react'
+import { CardType } from './Cards'
 
 interface CardProps {
-    title: string;
-    logo: string;
-    desc: string;
+    card: CardType;
     link: string;
 }
 
-const Card: React.FC<CardProps> = ({title, logo, desc, link }) => {
+const Card: React.FC<CardProps> = ( {card, link} ) => {
 
     const [fullDescription, setFullDescription] = useState(false);
 
-    let description = desc;
+    let description = card.desc;
 
     if (!fullDescription) {
-        description = desc.slice(0, 100) + "...";
+        description = card.desc.slice(0, 100) + "...";
     }
 
     return (
     <div className={styles.card}>
         <div className={styles.title}>
-            <h2>{title}</h2>
-            <img src={logo} alt="logo" />
+            <h2>{card.title}</h2>
+            <img src={card.logo} alt="logo" />
         </div>
 
         <div className={styles.desc}>

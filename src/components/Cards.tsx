@@ -6,15 +6,22 @@ import notion from '../assets/notion.svg'
 import spotify from '../assets/spotify.svg'
 import football from '../assets/football.svg'
 import { Link } from 'react-router-dom'
+import data from '../data.json'
 
 interface CardsProps {
     isHome: boolean;
 }
 
+export interface CardType {
+    title: string;
+    logo: string;
+    desc: string;
+    id: number;
+}
 
 const Cards: React.FC<CardsProps> = ({isHome}) => {
 
-    const cardData = [
+    const cardData: CardType[] = [
         {
         title: "web-app",
         logo: logo,
@@ -41,15 +48,15 @@ const Cards: React.FC<CardsProps> = ({isHome}) => {
         }
     ]
 
-    const cardDataHome = cardData.slice(0, 4);
+    const cardDataHome = data.projects.slice(0, 4);
 
   return (
     <div className={styles.cardSection}>
         <h1>Projects</h1>
         <div className={styles.cards}>  
              
-            {cardDataHome.map((card) => (
-                <Card title={card.title} logo={card.logo} desc={card.desc} link={`/projects/${card.id}`}/>
+            {cardDataHome.map((card: CardType) => (
+                <Card card={card} link={`/projects/${card.id}`}/>
             ))}
         </div>
         { isHome ? 
