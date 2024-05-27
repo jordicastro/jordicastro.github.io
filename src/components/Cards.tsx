@@ -12,6 +12,8 @@ export interface CardType {
     title: string;
     logo: string;
     desc: string;
+    github?: string;
+    deploy?: string;
     id: number;
 }
 
@@ -23,9 +25,8 @@ const Cards: React.FC<CardsProps> = ({isHome}) => {
     <div className={styles.cardSection}>
         <h1>Projects</h1>
         <div className={styles.cards}>  
-             
             {cardDataHome.map((card: CardType) => (
-                <Card card={card} link={`/projects/${card.id}`}/>
+                <Card card={card} buttonText='VIEW MORE' link={`/projects/${card.id}`} inProjectPage={false} />
             ))}
         </div>
         { isHome ? 

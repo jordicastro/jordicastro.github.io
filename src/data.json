@@ -4,24 +4,32 @@
             "title": "web-app",
             "logo": "https://i.ibb.co/0Bjtdvb/logo.png",
             "desc": "This is my web-app. It’s pretty cool! Have you seen the Figma for it? This app displays a list of projects I’ve worked on or am currently working on. An about page is included. Made with React.js + Vite.",
+            "github": "https://github.com/jordicastro/web-app",
+            "deploy": "https://jordicastro.github.io/",
             "id": 1
         }, 
         {
             "title": "notion-app",
             "logo": "https://i.ibb.co/kQ8hzmf/notion.png",
             "desc": "Recreating Notion’s award-winning note-taking app from scratch. Added page routing, improved shortcuts and hotkeys. Made with React.js.",
+            "github": "",
+            "deploy": "",
             "id": 2
         },
         {
             "title": "spotify-app",
             "logo": "https://i.ibb.co/jw1dbg1/spotify.png",
             "desc": "A web app created using React + Spotify’s API that searches for music, albums, mapped neatly in bins. accessing user info using OAUTH, this app has various features, including enabling users to play albums / playlists backwards, playing this-or-that with two songs the user listens to frequently, and an overview of their listening tendencies (similar to Spotify Wrapped). Made with React + Next.js .",
+            "github": "",
+            "deploy": "",
             "id": 3
         },
         {
             "title": "nfl-app",
             "logo": "https://i.ibb.co/FmMqXKS/football.png",
             "desc": "Utilizes NFL’s API to populate our database. Prompts users to enter SQL queries to update, delete, + view the DB. Made in React + Next.js",
+            "github": "https://github.com/jordicastro/NFL-db-app",
+            "deploy": "https://nfl-db-app.vercel.app/",
             "id": 4
         }
     ],
@@ -46,8 +54,8 @@
             "title": "Mountain Biking",
             "date": "JUNE 2020 => PRESENT",
             "desc": "I enjoy riding on the trails of the Greenway, which extends four cities in Northwest Arkansas: from Bentonville, to Rogers and Springdale, ending in Fayetteville. I usually go 20-30 miles and savor the scenic routes. Recently, I took a mountain biking course, which has inspired me to continue riding dirt. Given that Bentonville is the mountain biking capital of the United States, I’m ecstatic to continue learning and going on adventurous bike rides. ",
-            "link": "https://www.strava.com/athletes/108776798",
             "image": "https://i.ibb.co/rfxqNT0/mountainbiking.png",
+            "link": "https://www.strava.com/athletes/108776798",
             "id": 3
         },
         {
