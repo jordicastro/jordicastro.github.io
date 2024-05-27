@@ -24,11 +24,9 @@ const AboutCards = () => {
             const res = await fetch('/api/about');
             const data = await res.json();
             setBackendAboutData(data);
+            setLoading(false);
             } catch (error) {
                 console.log('error fetching AboutData', error);
-            }
-            finally {
-                setLoading(false);
             }
         }
         fetchAboutData();

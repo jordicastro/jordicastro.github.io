@@ -13,7 +13,7 @@
 }
 
 .loadingCard {
-    animation: loadingBackground 1s ease;
+    animation: loadingBackground 1.5s ease 0s infinite;
 }
 
 @keyframes loadingBackground {
@@ -67,4 +67,9 @@
 
 .button {
     margin-top: 5vw;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
 }

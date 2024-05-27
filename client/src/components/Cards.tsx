@@ -12,6 +12,8 @@ export interface CardType {
     title: string;
     logo: string;
     desc: string;
+    github?: string;
+    deploy?: string;
     id: number;
 }
 
@@ -25,13 +27,12 @@ const Cards: React.FC<CardsProps> = ({isHome}) => {
 
             const apiURL = isHome ? "/api/projects?_limit=4" : "/api/projects";
             try {
-            const response = await fetch(apiURL);
-            const data = await response.json();
-            setBackendProjects(data);
+                const response = await fetch(apiURL);
+                const data = await response.json();
+                setBackendProjects(data);
+                setLoading(false);
             } catch (error) {
                 console.log('error fetching projects', error);
-            } finally {
-                setLoading(false);
             }
 
         }
@@ -53,13 +54,13 @@ const Cards: React.FC<CardsProps> = ({isHome}) => {
             {loading ? 
                 <div className={styles.cards}>  
                     {loadingCards.map((card: CardType) => (
-                        <Card card={card} link={`/projects/${card.id}`} loading={loading}/>
+                        <Card card={card} buttonText='VIEW MORE' link={`/projects/${card.id}`} inProjectPage={false} loading={loading}/>
                     ))}
                 </div> 
             :(
                 <div className={styles.cards}>  
                     {backendProjects.map((card: CardType) => (
-                        <Card card={card} link={`/projects/${card.id}`} loading={loading}/>
+                        <Card card={card} buttonText='VIEW MORE' link={`/projects/${card.id}`} inProjectPage={false} loading={loading}/>
                     ))}
                 </div>
             )

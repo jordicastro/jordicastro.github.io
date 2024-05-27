@@ -12,7 +12,7 @@
 }
 
 .loadingCard {
-    animation: loadingBackground 1s ease;
+    animation: loadingBackground 1.5s ease 0s infinite;
 }
 
 @keyframes loadingBackground {

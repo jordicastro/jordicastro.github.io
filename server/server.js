@@ -6,6 +6,8 @@ const projects = [
         "title": "web-app",
         "logo": "https://i.ibb.co/0Bjtdvb/logo.png",
         "desc": "This is my web-app. It’s pretty cool! Have you seen the Figma for it? This app displays a list of projects I’ve worked on or am currently working on. An about page is included. Made with React.js + Vite.",
+        "github": "https://github.com/jordicastro/web-app",
+        "deploy": "",
         "id": 1
     }, 
     {
@@ -72,6 +74,16 @@ app.get('/api', (req, res) => {
 app.get('/api/projects', (req, res) => {
     res.json(projects);
 });
+
+app.get('/api/projects/:id', (req, res) => {
+    const id = req.params.id;
+    const project = projects.find(p => p.id == id);
+    if (project) {
+        res.json(project);
+    } else {
+        res.status(404).send('404 Project not found');
+    }
+})
 
 app.get('/api/about', (req, res) => {
     res.json(about);

@@ -5,11 +5,13 @@ import { CardType } from './Cards'
 
 interface CardProps {
     card: CardType;
+    buttonText: string;
     link: string;
+    inProjectPage: boolean;
     loading: boolean;
 }
 
-const Card: React.FC<CardProps> = ( {card, link, loading} ) => {
+const Card: React.FC<CardProps> = ( {card, buttonText, link, inProjectPage, loading} ) => {
 
     const [fullDescription, setFullDescription] = useState(false);
 
@@ -35,8 +37,12 @@ const Card: React.FC<CardProps> = ( {card, link, loading} ) => {
                 {fullDescription ? (<p>less</p>) : (<p>more</p>)}
             </button>
         </div> 
-
-        <Button text="VIEW MORE"  link={link}/>
+        <div className={styles.buttons}>
+        <Button text={buttonText}  link={link}/>
+        {inProjectPage &&
+            <Button text={"DEPLOY"} link={card.deploy } />
+        }
+        </div>
     </div>
     )
 }
