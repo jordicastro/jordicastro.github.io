@@ -12,15 +12,15 @@
             "title": "notion-app",
             "logo": "https://i.ibb.co/kQ8hzmf/notion.png",
             "desc": "Recreating Notion’s award-winning note-taking app from scratch. Added page routing, improved shortcuts and hotkeys. Made with React.js.",
-            "github": "",
-            "deploy": "",
+            "github": "https://github.com/jordicastro/note-app",
+            "deploy": "https://note-gkutuuqxs-jordicastros-projects.vercel.app/",
             "id": 2
         },
         {
             "title": "spotify-app",
             "logo": "https://i.ibb.co/jw1dbg1/spotify.png",
             "desc": "A web app created using React + Spotify’s API that searches for music, albums, mapped neatly in bins. accessing user info using OAUTH, this app has various features, including enabling users to play albums / playlists backwards, playing this-or-that with two songs the user listens to frequently, and an overview of their listening tendencies (similar to Spotify Wrapped). Made with React + Next.js .",
-            "github": "",
+            "github": "https://github.com/jordicastro/spotify-app",
             "deploy": "",
             "id": 3
         },
