@@ -1,36 +1,58 @@
 {
     "projects" : [
         {
-            "title": "web-app",
-            "logo": "https://i.ibb.co/0Bjtdvb/logo.png",
-            "desc": "This is my web-app. It’s pretty cool! Have you seen the Figma for it? This app displays a list of projects I’ve worked on or am currently working on. An about page is included. Made with React.js + Vite.",
-            "github": "https://github.com/jordicastro/web-app",
-            "deploy": "https://jordicastro.github.io/",
+            "title": "spotify app",
+            "logo": "https://svgshare.com/i/1Afb.svg",
+            "desc": "Developing a Next.js application that reworks the UI of Spotify, offering a more simplistic, minimal approach with Tailwind. Leveraging Spotify's API to fetch songs and albums, displaying top songs and a custom media player. Currently implementing OAUTH 2.0 to enable users to play albums / playlists backwards, and display their top 10 albums of all time.",
+            "github": "https://github.com/jordicastro/spotify-app",
+            "deploy": "https://spotify-app-ecru-ten.vercel.app/",
+            "figma": "https://www.figma.com/design/YVHiyyWug4qf5XejoBqvhy/spotifyapp?t=zHFsySyeHQCBWQ59-1",
             "id": 1
-        }, 
+        },
         {
-            "title": "notion-app",
-            "logo": "https://i.ibb.co/kQ8hzmf/notion.png",
-            "desc": "Recreating Notion’s award-winning note-taking app from scratch. Added page routing, improved shortcuts and hotkeys. Made with React.js.",
+            "title": "notion app",
+            "logo": "https://svgshare.com/i/1Afc.svg",
+            "desc": "Recreating Notion’s award-winning note-taking app from scratch. Added page routing, improved shortcuts and currently working on code and equation blocks. Made with Next.js.",
             "github": "https://github.com/jordicastro/note-app",
             "deploy": "https://note-gkutuuqxs-jordicastros-projects.vercel.app/",
+            "figma": "https://www.figma.com/design/E1Rsjobw55vy1GRlD4G5ZG/noteapp?node-id=0-1&t=zHFsySyeHQCBWQ59-1",
             "id": 2
         },
         {
-            "title": "spotify-app",
-            "logo": "https://i.ibb.co/jw1dbg1/spotify.png",
-            "desc": "A web app created using React + Spotify’s API that searches for music, albums, mapped neatly in bins. accessing user info using OAUTH, this app has various features, including enabling users to play albums / playlists backwards, playing this-or-that with two songs the user listens to frequently, and an overview of their listening tendencies (similar to Spotify Wrapped). Made with React + Next.js .",
-            "github": "https://github.com/jordicastro/spotify-app",
+            "title": "UARK PQC app",
+            "logo": "https://svgshare.com/i/1Afa.svg",
+            "desc": "Creating a web app using Next.js and Supabase to allow researchers to use the UofA’s cryptography equipment for side channel attacks. The app will allow users to upload their own traces, select the algorithm they want to test, and view the results of the leakage test.",
+            "github": "https://github.com/SCA-Capstone/SCA_Capstone",
             "deploy": "",
+            "figma": "https://www.figma.com/design/Us3iXzYjceUpIfsbyWMEzH/capstone-project-mockup?node-id=0-1&node-type=canvas&t=gZY92bB01WgaG0KS-0",
             "id": 3
         },
         {
-            "title": "nfl-app",
+            "title": "android geogussr app",
+            "logo": "https://svgshare.com/i/1AfD.svg",
+            "desc": "Developing an Android application that allows users to play a game similar to Geogussr. The app will use Google Maps API to generate a random location on UARK campus, and the user will have to guess where they are. The app will keep track of the user’s score and display it at the end of the game. A one-player and two-player mode will be available. Made with Kotlin in Android Studio.",
+            "github": "https://github.com/jordicastro/android-geogussr-app",
+            "deploy": "",
+            "figma": "",
+            "id": 4
+        },
+        {
+            "title": "nfl app",
             "logo": "https://i.ibb.co/FmMqXKS/football.png",
             "desc": "Utilizes NFL’s API to populate our database. Prompts users to enter SQL queries to update, delete, + view the DB. Made in React + Next.js",
             "github": "https://github.com/jordicastro/NFL-db-app",
             "deploy": "https://nfl-db-app.vercel.app/",
-            "id": 4
+            "figma": "",
+            "id": 5
+        },
+        {
+            "title": "portfolio app",
+            "logo": "https://i.ibb.co/0Bjtdvb/logo.png",
+            "desc": "This is my web-app. It’s pretty cool! Have you seen the Figma for it? This app displays a list of projects I’ve worked on or am currently working on. An about page is included. Made with React + Vite.",
+            "github": "https://github.com/jordicastro/web-app",
+            "deploy": "https://jordicastro.github.io/",
+            "figma": "https://www.figma.com/design/zbs7P8R4JHCNryLq2drwMN/web-app-mock-up?node-id=0-1&t=K2lPH52FVB29tLky-1",
+            "id": 6
         }
     ],
     "about" : [
@@ -43,26 +65,27 @@
             "id": 1
         },
         {
-            "title": "PCQ Undergrad Research",
+            "title": "PQC Undergrad Research",
             "date": "AUG 2021 => MAY 2022, JUNE 2024 => PRESENT",
-            "desc": "As a part of my undergraduate honors research, I worked under Dr. Nelson of the University of Arkansas to conduct side channel attacks on post-quantum crypto-graphic algorithms. Utilizing a ChipWhisperer and UFO board, I was able to test the safety of two encryption algorithms using Test Vector Leakage Assessment (TVLA) and present my findings at the University of Arkansas Honors Symposium. Currently, I am creating a full-stack SCA web-app that will enable researchers from across the globe to use the UofA’s PCQ equipment for leakage testing.",
+            "desc": "As a part of my undergraduate honors research, I worked under Dr. Nelson of the University of Arkansas to conduct side channel attacks on post-quantum crypto-graphic algorithms. Utilizing a ChipWhisperer and UFO board, I was able to test the safety of two encryption algorithms using Test Vector Leakage Assessment (TVLA) and present my findings at the University of Arkansas Honors Symposium. Currently, I am creating a full-stack web applikcation that will enable researchers from across the globe to use the UofA’s PCQ equipment for leakage testing.",
             "image": "https://i.ibb.co/tXpnT1r/PCQ.png",
-            "link": "https://github.com/SCA-Capstone/sca-app",
+            "link": "https://first-year-engineering.uark.edu/2022-engr-symposium/poster-images/SideChannelAttacksonPQCryptography.JPG",
             "id": 2
         },
         {
-            "title": "Mountain Biking",
+            "title": "Biking + Running",
             "date": "JUNE 2020 => PRESENT",
-            "desc": "I enjoy riding on the trails of the Greenway, which extends four cities in Northwest Arkansas: from Bentonville, to Rogers and Springdale, ending in Fayetteville. I usually go 20-30 miles and savor the scenic routes. Recently, I took a mountain biking course, which has inspired me to continue riding dirt. Given that Bentonville is the mountain biking capital of the United States, I’m ecstatic to continue learning and going on adventurous bike rides. ",
-            "image": "https://i.ibb.co/rfxqNT0/mountainbiking.png",
+            "desc": "I enjoy riding on the trails of the Greenway, which extends four cities in Northwest Arkansas: from Bentonville, to Rogers and Springdale, ending in Fayetteville. I usually go 20-30 miles and savor the scenic routes. Recently, I took a mountain biking course, which has inspired me to continue riding dirt. Given that Bentonville is the mountain biking capital of the United States, I’m excited to continue learning and going on adventurous bike rides. This semester, I'm racing the Square 2 Square, starting in Bentonville and ending in Fayetteville. I am also training to run a half-marathon in December. Follow me on Strava!",
+            "image": "https://svgshare.com/i/1Aer.svg",
             "link": "https://www.strava.com/athletes/108776798",
             "id": 3
         },
         {
-            "title": "MUSIC",
+            "title": "Music",
             "date": "APRIL 2003 => PRESENT",
-            "desc": "I LOVE MUSIC. On average, I listen to music for around three to six hours each day. The best compliment I have ever received was that I have the most diverse, unique music taste. Hence, my Spotify wrapped always seems to be all over the place. Because of my love of music, I have interacted with Spotify’s API and created some pretty cool apps that I suggest Spotify implement. Check them out here",
-            "image": "https://i.ibb.co/02d9NQq/music.jpg",
+            "desc": "I LOVE MUSIC. On average, I listen to music for around three to six hours each day. The best compliment I have ever received was that I have the most diverse, unique music taste. Hence, my Spotify wrapped always seems to be all over the place. Because of my love of music, I have interacted with Spotify’s API and created some pretty cool apps. Also, my favorite album is Un Verano Sin Ti.",
+            "image": "https://i.ibb.co/F0QtRD4/unveranosinti.jpg",
+            "link": "https://spotify-app-ecru-ten.vercel.app/album/3RQQmkQEvNCY4prGKE6oc5",
             "id": 4
         }
 

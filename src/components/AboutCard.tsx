@@ -22,10 +22,10 @@ const AboutCard:React.FC<AboutCardProps> = ({ card }) => {
         </div>
         {card.link ?  
             <a href={card.link} target="_blank" rel="noreferrer">
-                <img src={card.image} alt="card" />
+                <img className='rounded-3xl' src={card.image} alt="card" />
             </a>
             :
-            <img src={card.image} alt="card" />
+                <img className='rounded-3xl' src={card.image} alt="card" />
         }
     </div>
   )

@@ -14,12 +14,13 @@ export interface CardType {
     desc: string;
     github?: string;
     deploy?: string;
+    figma?: string;
     id: number;
 }
 
 const Cards: React.FC<CardsProps> = ({isHome}) => {
 
-    const cardDataHome = data.projects.slice(0, 4);
+    const cardDataHome = isHome ? data.projects.slice(0, 4) : data.projects;
 
   return (
     <div className={styles.cardSection}>
