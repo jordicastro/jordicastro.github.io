@@ -21,15 +21,15 @@ const Card: React.FC<CardProps> = ( {card, buttonText, link, inProjectPage} ) =>
         description = card.desc.slice(0, 100) + "...";
     }
 
-    const onCardClick = () => {
-        if (inProjectPage) {
-            return;
-        }
-        window.location.href = `/projects/${card.id}`;
-    }
+    // const onCardClick = () => {
+    //     if (inProjectPage) {
+    //         return;
+    //     }
+    //     window.location.href = `/projects/${card.id}`;
+    // }
 
     return (
-    <div className={styles.card} onClick={onCardClick}>
+    <div className={styles.card} >
 
         <div className={styles.title}>
             <h2>{card.title}</h2>
