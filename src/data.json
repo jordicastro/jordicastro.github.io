@@ -14,7 +14,7 @@
             "logo": "https://svgshare.com/i/1Afc.svg",
             "desc": "Recreating Notion’s award-winning note-taking app from scratch. Added page routing, improved shortcuts and currently working on code and equation blocks. Made with Next.js.",
             "github": "https://github.com/jordicastro/note-app",
-            "deploy": "https://note-gkutuuqxs-jordicastros-projects.vercel.app/",
+            "deploy": "https://note-app-inky-three.vercel.app/",
             "figma": "https://www.figma.com/design/E1Rsjobw55vy1GRlD4G5ZG/noteapp?node-id=0-1&t=zHFsySyeHQCBWQ59-1",
             "id": 2
         },
