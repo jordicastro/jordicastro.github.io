@@ -1,6 +1,6 @@
 import styles from './navbar.module.css'
 import { NavLink } from 'react-router-dom'
-import logo from '../assets/logo.svg'
+import webapp from '../assets/webapp.svg'
 const Navbar = () => {
 
   const linkClass = ({isActive}: {isActive: boolean}) => 
@@ -13,7 +13,7 @@ const Navbar = () => {
         <ul>
           <li className={styles.image}>
             <NavLink to='/'>
-            <img src={logo} alt="Logo" />
+            <img src={webapp} alt="Logo" />
             </NavLink>
           </li>
           <li>

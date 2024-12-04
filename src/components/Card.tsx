@@ -2,6 +2,12 @@ import styles from './card.module.css'
 import Button from './Button'
 import { useState } from 'react'
 import { CardType } from './Cards'
+import spotify from '../assets/spotify.svg'
+import notion from '../assets/notion.svg'
+import pqc from '../assets/pqc.svg'
+import hogspot from '../assets/hogspot.svg'
+import football from '../assets/football.svg'
+import webapp from '../assets/webapp.svg'
 
 interface CardProps {
     card: CardType;
@@ -15,11 +21,20 @@ const Card: React.FC<CardProps> = ( {card, buttonText, link, inProjectPage} ) =>
     const [fullDescription, setFullDescription] = useState(false);
     const inIndividualProjectPage = window.location.href.includes(`/projects/${card.id}`);
 
+    const imgLogo = 
+        card.logo === "spotify" ? spotify : 
+        card.logo === "notion" ? notion : 
+        card.logo === "pqc" ? pqc :
+        card.logo === "hogspot" ? hogspot :
+        card.logo === "football" ? football :
+        card.logo === "webapp" ? webapp : spotify;
+
     let description = card.desc;
 
     if (!fullDescription && !inIndividualProjectPage) {
         description = card.desc.slice(0, 100) + "...";
     }
+    
 
     // const onCardClick = () => {
     //     if (inProjectPage) {
@@ -38,10 +53,10 @@ const Card: React.FC<CardProps> = ( {card, buttonText, link, inProjectPage} ) =>
                 <a
                     href={`${card.deploy}`}
                 >
-                    <img src={card.logo} alt="logo" />
+                    <img src={imgLogo} alt="logo" />
                 </a>
             ) : (
-                <img src={card.logo} alt="logo" />
+                <img src={imgLogo} alt="logo" />
             )}
         </div>
 
