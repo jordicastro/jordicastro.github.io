@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import data from '../data.json'
-import Card from '../components/Card'
-import { CardType } from '../components/Cards'
+import Card from '../components/ProjectCard'
+import { CardType } from '../components/ProjectCards'
 
 const ProjectPage = () => {
   const { id } = useParams<{id: string}>()

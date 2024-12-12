@@ -1,38 +1,39 @@
-import styles from './card.module.css'
+import styles from './projectcard.module.css'
 import Button from './Button'
 import { useState } from 'react'
-import { CardType } from './Cards'
+import { ProjectCard } from './ProjectCards'
 import spotify from '../assets/spotify.svg'
 import notion from '../assets/notion.svg'
 import pqc from '../assets/pqc.svg'
 import hogspot from '../assets/hogspot.svg'
 import football from '../assets/football.svg'
 import webapp from '../assets/webapp.svg'
+import Tag from './Tag'
 
 interface CardProps {
-    card: CardType;
+    projectCard: ProjectCard;
     buttonText: string;
     link: string;
     inProjectPage: boolean;
 }
 
-const Card: React.FC<CardProps> = ( {card, buttonText, link, inProjectPage} ) => {
+const Card: React.FC<CardProps> = ( {projectCard, buttonText, link, inProjectPage} ) => {
 
     const [fullDescription, setFullDescription] = useState(false);
-    const inIndividualProjectPage = window.location.href.includes(`/projects/${card.id}`);
+    const inIndividualProjectPage = window.location.href.includes(`/projects/${projectCard.id}`);
 
     const imgLogo = 
-        card.logo === "spotify" ? spotify : 
-        card.logo === "notion" ? notion : 
-        card.logo === "pqc" ? pqc :
-        card.logo === "hogspot" ? hogspot :
-        card.logo === "football" ? football :
-        card.logo === "webapp" ? webapp : spotify;
+        projectCard.logo === "spotify" ? spotify : 
+        projectCard.logo === "notion" ? notion : 
+        projectCard.logo === "pqc" ? pqc :
+        projectCard.logo === "hogspot" ? hogspot :
+        projectCard.logo === "football" ? football :
+        projectCard.logo === "webapp" ? webapp : spotify;
 
-    let description = card.desc;
+    let description = projectCard.desc;
 
     if (!fullDescription && !inIndividualProjectPage) {
-        description = card.desc.slice(0, 100) + "...";
+        description = projectCard.desc.slice(0, 100) + "...";
     }
     
 
@@ -44,14 +45,30 @@ const Card: React.FC<CardProps> = ( {card, buttonText, link, inProjectPage} ) =>
     // }
 
     return (
-    <div className={styles.card} >
-
+    <div className={`${styles.card}`} >
+        { projectCard.isNew && (
+            <section
+                className='hidden md:flex'
+            >
+                <Tag text="NEW" color="purple" />
+            </section>
+        )  }
         <div className={styles.title}>
-            <h2>{card.title}</h2>
 
-            {card.deploy ? (
+            <h2
+                className='flex'
+            >
+                {projectCard.title}
+                <div
+                    className='flex sm:hidden'
+                >
+                    <Tag text="NEW" color="purple" />
+                </div>
+            </h2>
+
+            {projectCard.deploy ? (
                 <a
-                    href={`${card.deploy}`}
+                    href={`${projectCard.deploy}`}
                 >
                     <img src={imgLogo} alt="logo" />
                 </a>
@@ -76,8 +93,8 @@ const Card: React.FC<CardProps> = ( {card, buttonText, link, inProjectPage} ) =>
         <Button text={buttonText}  link={link}/>
         {inProjectPage &&
             <>
-                { card.deploy !== "" && <Button text={"DEPLOYED"} link={card.deploy} />}
-                { card.figma !== "" && <Button text={"FIGMA"} link={card.figma} /> }
+                { projectCard.deploy !== "" && <Button text={"DEPLOYED"} link={projectCard.deploy} />}
+                { projectCard.figma !== "" && <Button text={"FIGMA"} link={projectCard.figma} /> }
             </>
         }
         </div>

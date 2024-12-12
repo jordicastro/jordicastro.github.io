@@ -1,13 +1,34 @@
 {
     "projects" : [
         {
+            "title": "hogspot mobile app",
+            "logo": "hogspot",
+            "desc": "Developing an Android application that allows users to play a game similar to Geogussr. The app will use Google Maps API to generate a random location on UARK campus, and the user will have to guess where they are. The app will keep track of the user’s score and display it at the end of the game. A one-player and two-player mode will be available. Made with Kotlin in Android Studio.",
+            "github": "https://github.com/jordicastro/HogSpotmobile",
+            "deploy": "",
+            "figma": "https://www.figma.com/design/xrbYgHCSm7sGPimuGZez9h/HogSpot-Mobile?node-id=0-1&t=vQHx31NyDjf95mzU-1",
+            "isNew": true,
+            "id": 1
+        },
+        {
+            "title": "UARK PQC app",
+            "logo": "pqc",
+            "desc": "Creating a web app using Next.js and Supabase to allow researchers to use the UofA’s cryptography equipment for side channel attacks. The app will allow users to upload their own traces, select the algorithm they want to test, and view the results of the leakage test.",
+            "github": "https://github.com/jordicastro/UARK_PQC_app",
+            "deploy": "",
+            "figma": "https://www.figma.com/design/Us3iXzYjceUpIfsbyWMEzH/capstone-project-mockup?node-id=0-1&node-type=canvas&t=gZY92bB01WgaG0KS-0",
+            "isNew": true,
+            "id": 2
+        },
+        {
             "title": "spotify app",
             "logo": "spotify",
             "desc": "Developing a Next.js application that reworks the UI of Spotify, offering a more simplistic, minimal approach with Tailwind. Leveraging Spotify's API to fetch songs and albums, displaying top songs and a custom media player. Currently implementing OAUTH 2.0 to enable users to play albums / playlists backwards, and display their top 10 albums of all time.",
             "github": "https://github.com/jordicastro/spotify-app",
             "deploy": "https://spotify-app-ecru-ten.vercel.app/",
             "figma": "https://www.figma.com/design/YVHiyyWug4qf5XejoBqvhy/spotifyapp?t=zHFsySyeHQCBWQ59-1",
-            "id": 1
+            "isNew": false,
+            "id": 3
         },
         {
             "title": "notion app",
@@ -16,24 +37,7 @@
             "github": "https://github.com/jordicastro/note-app",
             "deploy": "https://note-app-inky-three.vercel.app/",
             "figma": "https://www.figma.com/design/E1Rsjobw55vy1GRlD4G5ZG/noteapp?node-id=0-1&t=zHFsySyeHQCBWQ59-1",
-            "id": 2
-        },
-        {
-            "title": "UARK PQC app",
-            "logo": "pqc",
-            "desc": "Creating a web app using Next.js and Supabase to allow researchers to use the UofA’s cryptography equipment for side channel attacks. The app will allow users to upload their own traces, select the algorithm they want to test, and view the results of the leakage test.",
-            "github": "https://github.com/SCA-Capstone/SCA_Capstone",
-            "deploy": "",
-            "figma": "https://www.figma.com/design/Us3iXzYjceUpIfsbyWMEzH/capstone-project-mockup?node-id=0-1&node-type=canvas&t=gZY92bB01WgaG0KS-0",
-            "id": 3
-        },
-        {
-            "title": "hogspot android app",
-            "logo": "hogspot",
-            "desc": "Developing an Android application that allows users to play a game similar to Geogussr. The app will use Google Maps API to generate a random location on UARK campus, and the user will have to guess where they are. The app will keep track of the user’s score and display it at the end of the game. A one-player and two-player mode will be available. Made with Kotlin in Android Studio.",
-            "github": "https://github.com/jordicastro/android-geogussr-app",
-            "deploy": "",
-            "figma": "",
+            "isNew": false,
             "id": 4
         },
         {
@@ -43,6 +47,7 @@
             "github": "https://github.com/jordicastro/NFL-db-app",
             "deploy": "https://nfl-db-app.vercel.app/",
             "figma": "",
+            "isNew": false,
             "id": 5
         },
         {
@@ -52,6 +57,7 @@
             "github": "https://github.com/jordicastro/web-app",
             "deploy": "https://jordicastro.github.io/",
             "figma": "https://www.figma.com/design/zbs7P8R4JHCNryLq2drwMN/web-app-mock-up?node-id=0-1&t=K2lPH52FVB29tLky-1",
+            "isNew": false,
             "id": 6
         }
     ],
@@ -69,7 +75,7 @@
             "date": "AUG 2021 => MAY 2022, JUNE 2024 => PRESENT",
             "desc": "As a part of my undergraduate honors research, I worked under Dr. Nelson of the University of Arkansas to conduct side channel attacks on post-quantum crypto-graphic algorithms. Utilizing a ChipWhisperer and UFO board, I was able to test the safety of two encryption algorithms using Test Vector Leakage Assessment (TVLA) and present my findings at the University of Arkansas Honors Symposium. Currently, I am creating a full-stack web applikcation that will enable researchers from across the globe to use the UofA’s PCQ equipment for leakage testing.",
             "image": "pqcUndergrad",
-            "link": "https://first-year-engineering.uark.edu/2022-engr-symposium/poster-images/SideChannelAttacksonPQCryptography.JPG",
+            "link": "https://github.com/jordicastro/UARK_PQC_app",
             "id": 2
         },
         {
