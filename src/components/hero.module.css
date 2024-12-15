@@ -72,9 +72,11 @@
     margin-top: 50px;
     justify-content: space-around;
     background-color: #241650;
-    border-radius: 10px;
+    border-radius: 1.25rem;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 .logocarousel img {

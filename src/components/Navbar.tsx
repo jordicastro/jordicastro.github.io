@@ -1,43 +1,55 @@
-import styles from './navbar.module.css'
-import { NavLink } from 'react-router-dom'
-import webapp from '../assets/webapp.svg'
+import { NavLink } from "react-router-dom"
+import webappLogo from '../assets/webapp.svg'
+import NavButton from './NavButton'
+
+
 const Navbar = () => {
 
-  const linkClass = ({isActive}: {isActive: boolean}) => 
-    isActive ? styles.active : styles.button
+    const navButtons = [
+        {
+            name: 'home',
+            link: '/'
+        },
+        {
+            name: 'projects',
+            link: '/projects'
+        },
+        {
+            name: 'about',
+            link: '/about'
+        }
+    ]
 
-  return (
-    <nav className={styles.navbar}>
+    return (
+        <nav
+            className="flex justify-between items-center bg-[#302A67] w-full h-auto p-4 text-white rounded-b-xl"
+        >
 
-      <div className={styles.logo}>
-        <ul>
-          <li className={styles.image}>
-            <NavLink to='/'>
-            <img src={webapp} alt="Logo" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/'>
-            <p>jordi.dev</p>
-            </NavLink>
-          </li>
-        </ul>
-      </div>
+            <div
+                className="flex justify-center items-center gap-x-3"
+            >
+                <NavLink to='/'>
+                    <img
+                        src={webappLogo} alt="Logo"
+                        className="w-8 h-8 sm:w-12 sm:h-12 transition-all duration-500 ease-in-out transform hover:scale-105 hover:duration-300 hover:delay-100"
+                    />
+                </NavLink>
 
-      <div>
-        <ul>
-          <li>
-            <NavLink to='/' className={linkClass}>home</NavLink>
-          </li>
-          <li>
-            <NavLink to='/projects'className={linkClass}>projects</NavLink>
-          </li>
-          <li>
-            <NavLink to='/about' className={linkClass}>about</NavLink>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                <p
+                    className="text-sm sm:text-lg font-medium transition-all duration-500 ease-in-out transform"
+                >
+                    jordi.dev
+                </p>
+            </div>
+
+            <section
+                className="flex justify-center items-center gap-x-3"
+            >
+                {navButtons.map((button, index) => (
+                    <NavButton key={index} button={button} />
+                ))}
+            </section>
+        </nav>
   )
 }
 

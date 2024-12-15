@@ -16,11 +16,15 @@ const Hero = () => {
     <>
         <div className={styles.hero}>
             <div className={styles.img} >
-                <img className={styles.hex} src={heroPic} alt="Hero" />
+                <img className={`${styles.hex}`} src={heroPic} alt="Hero" />
             </div >
+            {/* <div
+            className='w-6 h-16 rounded-full bg-gradient-to-r from-green-400 to-blue-500 animate-shapeChange'
+            >
+            </div> */}
             <div className={styles.text} >
                 <h1>Hi, I'm Jordi 👋</h1>
-                <p>I’m a passionate full stack React developer based in Fayetteville, Arkansas.📍</p>
+                <p>I’m a passionate full stack developer based in Fayetteville, Arkansas.📍</p>
                 <div className={styles.links} >
                     <a href="https://www.linkedin.com/in/jordicastr0/" >
                         <img src={linkedin} alt="LinkedIn" />

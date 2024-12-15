@@ -4,6 +4,7 @@ import hoghacks from '../assets/hoghacks.png'
 import pqcUndergrad from '../assets/pqcUndergrad.png'
 import strava from '../assets/strava.svg'
 import unveranosinti from '../assets/unveranosinti.png'
+import spotifywrapped from '../assets/spotifywrapped.png'
 
 interface AboutCardProps {
     card: Card;
@@ -15,7 +16,8 @@ const AboutCard:React.FC<AboutCardProps> = ({ card }) => {
         card.image === "hoghacks" ? hoghacks :
         card.image === "pqcUndergrad" ? pqcUndergrad :
         card.image === "strava" ? strava :
-        card.image === "unveranosinti" ? unveranosinti : hoghacks;
+        card.image === "unveranosinti" ? unveranosinti :
+        card.image === "spotifywrapped" ? spotifywrapped : hoghacks
 
   return (
     <div className={styles.card}>
@@ -32,10 +34,10 @@ const AboutCard:React.FC<AboutCardProps> = ({ card }) => {
         </div>
         {card.link ?  
             <a href={card.link} target="_blank" rel="noreferrer">
-                <img className='rounded-3xl' src={imgLogo} alt="card" />
+                <img className='rounded-2xl' src={imgLogo} alt="card" />
             </a>
             :
-                <img className='rounded-3xl' src={imgLogo} alt="card" />
+                <img className='rounded-2xl' src={imgLogo} alt="card" />
         }
     </div>
   )

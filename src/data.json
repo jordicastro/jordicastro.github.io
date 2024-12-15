@@ -3,7 +3,7 @@
         {
             "title": "hogspot mobile app",
             "logo": "hogspot",
-            "desc": "Developing an Android application that allows users to play a game similar to Geogussr. The app will use Google Maps API to generate a random location on UARK campus, and the user will have to guess where they are. The app will keep track of the user’s score and display it at the end of the game. A one-player and two-player mode will be available. Made with Kotlin in Android Studio.",
+            "desc": "Developed an Android application that allows users to play a game similar to Geogussr. This app uses the Google Maps API to allow users to explore the Univerity of Arkansas campus. The app has an explore page, search page, user page, and map activity page. Made with Kotlin and Jetpack Compose in Android Studio.",
             "github": "https://github.com/jordicastro/HogSpotmobile",
             "deploy": "",
             "figma": "https://www.figma.com/design/xrbYgHCSm7sGPimuGZez9h/HogSpot-Mobile?node-id=0-1&t=vQHx31NyDjf95mzU-1",
@@ -13,7 +13,7 @@
         {
             "title": "UARK PQC app",
             "logo": "pqc",
-            "desc": "Creating a web app using Next.js and Supabase to allow researchers to use the UofA’s cryptography equipment for side channel attacks. The app will allow users to upload their own traces, select the algorithm they want to test, and view the results of the leakage test.",
+            "desc": "Created a web application using Next.js and Supabase to allow researchers to use the UofA’s cryptography equipment for testing their quantum safe algorithms. This app has a landing page, a login page, a submission page, where users can upload their algorithms, and a dashboard, where users can see the status and results of their submissions.",
             "github": "https://github.com/jordicastro/UARK_PQC_app",
             "deploy": "",
             "figma": "https://www.figma.com/design/Us3iXzYjceUpIfsbyWMEzH/capstone-project-mockup?node-id=0-1&node-type=canvas&t=gZY92bB01WgaG0KS-0",
@@ -43,7 +43,7 @@
         {
             "title": "nfl app",
             "logo": "football",
-            "desc": "Utilizes NFL’s API to populate our database. Prompts users to enter SQL queries to update, delete, + view the DB. Made in React + Next.js",
+            "desc": "Utilizes NFL’s API to populate our database. Prompts users to enter SQL queries to update, delete, + view the DB. Made with Next.js and Supabase",
             "github": "https://github.com/jordicastro/NFL-db-app",
             "deploy": "https://nfl-db-app.vercel.app/",
             "figma": "",
@@ -65,23 +65,23 @@
         {
             "title": "ACM VICE PRESIDENT",
             "date": "JAN 2024 => PRESENT",
-            "desc": "I am the ACM vice president for The University of Arkansas’ RSO. During my time in the role, I have helped host various events, including meet the professors, where students can delve into UofA research, social and networking events, and this past annual 2024 HogHacks Hackathon, where over 200 students worked in teams to present their innovative projects to a panel of judges. I am currently working on planning events for the upcoming school year, along with leading a team of developers to help remodel the UofA’s ACM website.",
+            "desc": "I am the Association of Computing and Machinery (ACM) vice president at the University of Arkansas. During my time in the role, I have helped host various events, including meet the professors, where students can delve into UofA research, social and networking events, and this past annual 2024 HogHacks Hackathon, where over 200 students worked in teams to present their innovative projects to a panel of judges. This semester, I ran a React workshop, where I taught students the basics of React with a live coding demo. I also volunteered at my elementary school to help 3rd graders with the Hour of Code.",
             "image": "hoghacks",
             "link": "https://uark-acm.github.io/hoghacks/",
             "id": 1
         },
         {
             "title": "PQC Undergrad Research",
-            "date": "AUG 2021 => MAY 2022, JUNE 2024 => PRESENT",
-            "desc": "As a part of my undergraduate honors research, I worked under Dr. Nelson of the University of Arkansas to conduct side channel attacks on post-quantum crypto-graphic algorithms. Utilizing a ChipWhisperer and UFO board, I was able to test the safety of two encryption algorithms using Test Vector Leakage Assessment (TVLA) and present my findings at the University of Arkansas Honors Symposium. Currently, I am creating a full-stack web applikcation that will enable researchers from across the globe to use the UofA’s PCQ equipment for leakage testing.",
+            "date": "AUG 2021 => MAY 2022, JUNE 2024 => DEC 2024",
+            "desc": "As a part of my undergraduate honors research, I worked under Dr. Nelson of the University of Arkansas to conduct side channel attacks on post-quantum crypto-graphic algorithms. Utilizing a ChipWhisperer and UFO board, I was able to test the safety of two encryption algorithms using Test Vector Leakage Assessment (TVLA) and present my findings at the University of Arkansas Honors Symposium. This semester, I created a full-stack web application using Next.js that will connect researchers with UofA’s PCQ equipment for leakage testing. Our sponsor will present our paper to the board to receiving funding for the project.",
             "image": "pqcUndergrad",
             "link": "https://github.com/jordicastro/UARK_PQC_app",
             "id": 2
         },
         {
-            "title": "Biking + Running",
+            "title": "Running + Biking",
             "date": "JUNE 2020 => PRESENT",
-            "desc": "I enjoy riding on the trails of the Greenway, which extends four cities in Northwest Arkansas: from Bentonville, to Rogers and Springdale, ending in Fayetteville. I usually go 20-30 miles and savor the scenic routes. Recently, I took a mountain biking course, which has inspired me to continue riding dirt. Given that Bentonville is the mountain biking capital of the United States, I’m excited to continue learning and going on adventurous bike rides. This semester, I'm racing the Square 2 Square, starting in Bentonville and ending in Fayetteville. I am also training to run a half-marathon in December. Follow me on Strava!",
+            "desc": "I enjoy riding on the trails of the Greenway, which extends four cities in Northwest Arkansas: from Bentonville, to Rogers and Springdale, ending in Fayetteville. This semester, I raced the Square 2 Square, starting in Bentonville and ending in Fayetteville. I am also raced my first ever half-marathon in December. My goal for 2025 is to run 1000 miles and to race another half marathon! Follow me on Strava!",
             "image": "strava",
             "link": "https://www.strava.com/athletes/108776798",
             "id": 3
@@ -89,8 +89,8 @@
         {
             "title": "Music",
             "date": "APRIL 2003 => PRESENT",
-            "desc": "I LOVE MUSIC. On average, I listen to music for around three to six hours each day. The best compliment I have ever received was that I have the most diverse, unique music taste. Hence, my Spotify wrapped always seems to be all over the place. Because of my love of music, I have interacted with Spotify’s API and created some pretty cool apps. Also, my favorite album is Un Verano Sin Ti.",
-            "image": "unveranosinti",
+            "desc": "I LOVE MUSIC. I'm constantly listening to music as I head to class, study, or run. Spotify Wrapped was very underwhelming this year. I'm shooting for over 100k minutes listened for next year. Because of my love of music, I have leveraged Spotify’s API to create a Spotify clone. My favorite album is still Un Verano Sin Ti.",
+            "image": "spotifywrapped",
             "link": "https://spotify-app-ecru-ten.vercel.app/album/3RQQmkQEvNCY4prGKE6oc5",
             "id": 4
         }

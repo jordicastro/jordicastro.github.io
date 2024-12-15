@@ -45,7 +45,7 @@ const Card: React.FC<CardProps> = ( {projectCard, buttonText, link, inProjectPag
     // }
 
     return (
-    <div className={`${styles.card}`} >
+    <div className={`${styles.card} px-8 md:px-9 sm:border-4 sm:hover:border-[#61DAFB]`} >
         { projectCard.isNew && (
             <section
                 className='hidden md:flex'
@@ -55,16 +55,20 @@ const Card: React.FC<CardProps> = ( {projectCard, buttonText, link, inProjectPag
         )  }
         <div className={styles.title}>
 
-            <h2
-                className='flex'
+            <section
+                className='flex justify-center items-center'
             >
-                {projectCard.title}
-                <div
-                    className='flex sm:hidden'
-                >
-                    <Tag text="NEW" color="purple" />
-                </div>
-            </h2>
+                <h2>
+                    {projectCard.title}
+                </h2>
+                { projectCard.isNew && (
+                    <div
+                        className='flex sm:hidden h-full justify-center items-center mt-4'
+                    >
+                        <Tag text="NEW" color="purple" />
+                    </div>
+                )}
+            </section>
 
             {projectCard.deploy ? (
                 <a
@@ -78,7 +82,7 @@ const Card: React.FC<CardProps> = ( {projectCard, buttonText, link, inProjectPag
         </div>
 
         <div className={styles.desc}>
-            <p>{description}</p>
+            <p className='transition-'>{description}</p>
         </div>
 
         {!inIndividualProjectPage && (
